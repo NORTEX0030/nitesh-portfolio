@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitesh Yadav - DevOps & Cloud Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glow {
+      box-shadow: 0 0 15px #00fff7, 0 0 25px #00fff7, 0 0 35px #00fff7;
+    }
+    #certificateModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 30;
+    }
+    #certificateContent {
+      max-width: 80%;
+      max-height: 80%;
+      margin: 5% auto;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <nav class="w-full fixed top-0 left-0 z-20 bg-black bg-opacity-80 px-6 py-4 flex justify-between items-center border-b border-cyan-500">
+    <h1 class="text-xl font-bold text-cyan-400">Nitesh Yadav</h1>
+    <ul class="flex space-x-4 text-white font-medium">
+      <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+      <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
+      <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+      <li><a href="#certifications" class="hover:text-cyan-400">Certifications</a></li>
+      <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left pt-20">
+    <div class="md:w-1/2 flex justify-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" class="h-64 animate-bounce" alt="DevOps Cartoon" />
+    </div>
+    <div class="md:w-1/2 space-y-4">
+      <h2 class="text-xl text-cyan-300">Hello, I'm</h2>
+      <h1 class="text-5xl md:text-7xl font-bold text-white">Nitesh Yadav</h1>
+      <h2 class="text-2xl md:text-3xl text-cyan-400">DevOps Engineer</h2>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-20 bg-gray-900 bg-opacity-80 relative z-10">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-10">About Me</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        Passionate Full Stack Web Developer and DevOps Engineer with hands-on experience in designing, developing, deploying, and maintaining scalable web applications and cloud infrastructure.
+        Skilled in modern web technologies (HTML, CSS, JavaScript, React, Node.js), cloud platforms (AWS EC2, S3, RDS, Lambda), and DevOps tools (Docker, Jenkins, GitHub Actions, Terraform).
+        Strong believer in automation and CI/CD practices to streamline workflows and accelerate development cycles.
+      </p>
+      <a href="#" id="downloadResume" class="inline-block mt-6 px-6 py-3 bg-cyan-400 text-black font-semibold rounded-full hover:bg-cyan-300 transition glow opacity-70">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-800 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="h-12 mx-auto mb-2" alt="AWS" onerror="console.log('AWS SVG failed'); this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.png'">
+          <p>AWS</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-12 mx-auto mb-2" alt="Docker">
+          <p>Docker</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" class="h-12 mx-auto mb-2" alt="Kubernetes">
+          <p>Kubernetes</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" class="h-12 mx-auto mb-2" alt="Terraform">
+          <p>Terraform</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" class="h-12 mx-auto mb-2" alt="Jenkins">
+          <p>Jenkins</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" class="h-12 mx-auto mb-2" alt="GitLab">
+          <p>GitLab</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" class="h-12 mx-auto mb-2" alt="Ansible">
+          <p>Ansible</p>
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="h-12 mx-auto mb-2" alt="Linux">
+          <p>Linux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-gray-900 bg-opacity-80 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-800 rounded-lg text-center hover:scale-105 transition glow">CI/CD Pipeline</div>
+        <div class="p-6 bg-gray-800 rounded-lg text-center hover:scale-105 transition glow">Infra-as-Code</div>
+        <div class="p-6 bg-gray-800 rounded-lg text-center hover:scale-105 transition glow">Cloud Architecture</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-20 bg-gray-800 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">Certifications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow cursor-pointer" onclick="showCertificate('AWS Certified Solutions Architect')">
+          AWS Certified Solutions Architect
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow cursor-pointer" onclick="showCertificate('Certified Kubernetes Administrator')">
+          Certified Kubernetes Administrator
+        </div>
+        <div class="p-4 bg-gray-900 rounded-lg text-center glow cursor-pointer" onclick="showCertificate('Professional DevOps Engineer')">
+          Professional DevOps Engineer
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 relative z-10">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-10">Get in Touch</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-6">Based in Mumbai, India. Open to DevOps roles and freelance opportunities.</p>
+      <div class="space-y-4 text-lg">
+        <p>
+          <a href="https://www.linkedin.com/in/niteshyadav-cloud/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="h-8 inline-block mr-2 hover:scale-110 transition duration-300">
+          </a>
+          LinkedIn
+        </p>
+        <p>
+          <a href="https://github.com/NORTEX0030" target="_blank">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="h-8 inline-block mr-2 hover:scale-110 transition duration-300">
+          </a>
+          GitHub
+        </p>
+        <p>✉️ Email: <a href="mailto:yadavnitesh2003@gmail.com" class="text-cyan-400 hover:text-cyan-300">yadavnitesh2003@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="flex items-center justify-center">
+    <div id="certificateContent" class="bg-white p-4 rounded shadow-lg">
+      <h3 id="certificateTitle" class="text-2xl font-bold text-black mb-4"></h3>
+      <p id="certificateText" class="text-black"></p>
+      <button onclick="closeCertificate()" class="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Resume Base64 (simplified representation, replace with actual encoded string)
+    const resumeBase64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."; // Replace with actual resume PNG base64
+    document.getElementById('downloadResume').addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = resumeBase64;
+      link.download = 'Nitesh_Yadav_Resume.png';
+      link.click();
+    });
+
+    // Certificate content
+    const certificateContent = `
+      AWS Training & Certification
+      Completion Certificate
+      AWS Cloud Quest: Cloud Practitioner
+      Completed: June 17, 2025
+
+      Awarded to
+      Nitesh Yadav
+
+      Michelle Vaz
+      Director, AWS Training & Certification
+    `;
+
+    function showCertificate(title) {
+      document.getElementById('certificateTitle').textContent = title;
+      document.getElementById('certificateText').textContent = certificateContent;
+      document.getElementById('certificateModal').style.display = 'flex';
+    }
+
+    function closeCertificate() {
+      document.getElementById('certificateModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('certificateModal').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('certificateModal')) {
+        closeCertificate();
+      }
+    });
+  </script>
+</body>
+</html>
