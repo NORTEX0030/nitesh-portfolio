@@ -27,6 +27,7 @@
     .navbar-scroll {
       overflow-x: auto;
       white-space: nowrap;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
     }
     .navbar-scroll::-webkit-scrollbar {
       display: none; /* Hide scrollbar for WebKit browsers */
@@ -42,29 +43,29 @@
 <body class="bg-black text-white">
   <!-- Navbar -->
   <nav class="w-full fixed top-0 left-0 z-20 bg-black bg-opacity-80 px-4 py-2 border-b border-cyan-500">
-    <div class="flex justify-between items-center">
+    <div class="flex items-center justify-between">
       <h1 class="text-2xl font-bold text-cyan-400 sm:text-3xl">Nitesh Yadav</h1>
       <div class="navbar-scroll">
-        <ul class="flex space-x-4 text-white font-medium">
-          <li><a href="#about" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400">About</a></li>
-          <li><a href="#skills" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400">Skills</a></li>
-          <li><a href="#projects" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400">Projects</a></li>
-          <li><a href="#certifications" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400">Certifications</a></li>
-          <li><a href="#contact" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400">Contact</a></li>
+        <ul class="flex flex-row items-center space-x-4 text-white font-medium">
+          <li><a href="#about" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400 whitespace-nowrap">About</a></li>
+          <li><a href="#skills" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400 whitespace-nowrap">Skills</a></li>
+          <li><a href="#projects" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400 whitespace-nowrap">Projects</a></li>
+          <li><a href="#certifications" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400 whitespace-nowrap">Certifications</a></li>
+          <li><a href="#contact" class="px-2 py-1 text-base sm:text-lg hover:text-cyan-400 whitespace-nowrap">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left pt-16 sm:pt-20">
-    <div class="md:w-1/2 flex justify-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" class="h-48 sm:h-64 animate-bounce" alt="DevOps Cartoon" />
-    </div>
-    <div class="md:w-1/2 space-y-2 sm:space-y-4">
-      <h2 class="text-lg sm:text-xl text-cyan-300">Hello, I'm</h2>
-      <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold text-white">Nitesh Yadav</h1>
-      <h2 class="text-xl sm:text-2xl md:text-3xl text-cyan-400">DevOps Engineer</h2>
+  <section class="h-screen flex flex-col items-center justify-center text-center pt-16 sm:pt-20">
+    <div class="flex flex-col items-center space-y-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" class="h-40 sm:h-48 md:h-64 animate-bounce" alt="DevOps Cartoon" />
+      <div class="space-y-2">
+        <h2 class="text-lg sm:text-xl text-cyan-300">Hello, I'm</h2>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white">Nitesh Yadav</h1>
+        <h2 class="text-xl sm:text-2xl md:text-3xl text-cyan-400">DevOps Engineer</h2>
+      </div>
     </div>
   </section>
 
@@ -87,7 +88,7 @@
       <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-10">Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         <div class="p-2 sm:p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="h-12 mx-auto mb-2" alt="AWS" onerror="console.log('AWS SVG failed'); this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.png'">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="h-8 sm:h-12 mx-auto mb-1 sm:mb-2" alt="AWS" onerror="console.log('AWS SVG failed'); this.src='https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.png'">
           <p class="text-sm sm:text-base">AWS</p>
         </div>
         <div class="p-2 sm:p-4 bg-gray-900 rounded-lg text-center glow hover:scale-110 transition duration-300">
